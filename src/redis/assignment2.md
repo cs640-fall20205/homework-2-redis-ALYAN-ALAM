@@ -9,9 +9,10 @@
 ## Day 1
 1. (10 points) Read Day 1. Skip section on Unions on page 270. Work through the examples in the text. Save your database to dump.rdb (see README.md).
 
+
 2. (1 point) What is the URL to Redis' documentation on its commands:
 ```
-
+    https://redis.io/docs/latest/
 ```
 
 3. (1 point) What is the runtime complexity (in Big-O notation) for LREM?
