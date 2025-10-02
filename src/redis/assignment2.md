@@ -17,6 +17,13 @@
 
 3. (1 point) What is the runtime complexity (in Big-O notation) for LREM?
 ```
+Runtime Complexity : O(N)
+
+Details: For removing elements from redis we need to traverse it just like a list in python which is N in worst case when we find the occurence of the element then it take M time to remove the element.
+So it is O(N+M) = O(N)  // Ignore the smallest values while calculating the Big O notation.
+
+Sources:
+https://redis.io/docs/latest/commands/lrem/
 
 ```
 
