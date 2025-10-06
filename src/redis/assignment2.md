@@ -39,11 +39,15 @@ GET alyan
 
 ```
 HSET aa642906 username "alyanalam" firstname "alyan" lastname "alam" password "124578963"
+
+HGETALL aa642906
 ```
 
 6. (2 points) Create a hash that holds your father’s and mother’s names as separate key-value pairs. Use the proper Redis commands to show that the data has correctly been entered followed by the results. Show both commands below including the command prompt:
 ```
+HSET parents father "Muhammad Alam" mother "Ayesha Alam"
 
+HGETALL parents
 ```
 
 7. (3 points) Use a list to:
