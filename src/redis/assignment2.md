@@ -96,7 +96,11 @@ HGETALL jane
 ```
 ZADD store 2.99 "Cheetos" 1.00 "apple" 3.45 "Hersheys" 1.79 "Coke"
 
+ZRANGE store 0 -1 WITHSCORES
 
+ZINCRBY store -1.00 "Hersheys"
+
+ZRANGE store 0 -1 WITHSCORES
 
 ```
 
