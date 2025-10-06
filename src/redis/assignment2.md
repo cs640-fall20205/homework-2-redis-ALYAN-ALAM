@@ -30,13 +30,15 @@ https://redis.io/docs/latest/commands/lrem/
 
 4. (2 points) Create a structure to hold the value of your address with the key of your first name. For instance, mine would be “heidi”  “CS & IT Department, Herman Hall 207C, Western New England University, Springfield, MA, 01119”. Use the proper Redis command to show that the data has correctly been entered and followed by the results. Show both commands below including the prompts:
 ```
+SET alyan "62 Massachusetts Ave. Springfield, MA, 01119"
 
+GET alyan
 ```
 
 5. (2 points) Create a hash structure to hold your WNE user name, first name, last name, and password. Of course provide a fake password. For instance, my data would be: “he302979”, “heidi”, “ellis”, “xxxx”.  Use the proper Redis command to show that the data has correctly been entered followed by the results. Show both commands below including the command prompts:
 
 ```
-
+HSET aa642906 username "alyanalam" firstname "alyan" lastname "alam" password "124578963"
 ```
 
 6. (2 points) Create a hash that holds your father’s and mother’s names as separate key-value pairs. Use the proper Redis commands to show that the data has correctly been entered followed by the results. Show both commands below including the command prompt:
