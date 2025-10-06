@@ -60,6 +60,15 @@ HGETALL parents
 
 Show the commands below including the command prompts:
 ```
+LPUSH my_stack pears apples peaches
+
+LPOP my_stack
+
+LRANGE my_stack 0 -1
+
+LPUSH my_stack oranges
+
+LRANGE my_stack 0 -1
 
 ```
 
