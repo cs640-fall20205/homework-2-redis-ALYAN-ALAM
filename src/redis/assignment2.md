@@ -79,11 +79,24 @@ LRANGE my_stack 0 -1
 Write the commands below including the command prompts:
 
 ```
+HSET jane first "Jane" middle "Ellen" last "Doe"
+
+HGETALL jane
+
+MULTI
+HSET jane middle "Ellen Doe"
+HSET jane last "Fitzgerald"
+EXEC
+
+HGETALL jane
 
 ```
 
 9. (2 points) Create a sorted set that holds the costs of the following items:  Cheetos: $2.99, apple: $1.00, Hershey’s: $3.45, and Coke: $1.79.  Print the set in ascending order.  Reduce the price of Hersheys by $1.00 using the ZINCRBY command. Print the set again in ascending order. Show the Redis commands below including the command prompts:
 ```
+ZADD store 2.99 "Cheetos" 1.00 "apple" 3.45 "Hersheys" 1.79 "Coke"
+
+
 
 ```
 
