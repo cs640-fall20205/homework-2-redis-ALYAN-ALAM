@@ -106,7 +106,9 @@ ZRANGE store 0 -1 WITHSCORES
 
 10. (2 points) When using 2-factor authentication, many web sites send the user a link to confirm their identity. These links typically expire within 5 minutes. Reproduce this concept in Redis by storing a key named 'link' whose value is a URL (your choice), that expires in 5 minutes. Do it in a single command. Check to ensure that the link exists. Write the commands below including the command prompts:
 ```
+SETEX link 300 "https://www.linkedin.com/feed/"
 
+EXISTS link
 ```
 
 ## Day 2
